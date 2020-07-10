@@ -1,0 +1,20 @@
+01:22:52 **** Incremental Build of configuration Debug for project can1-loopbackMode ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "can1-loopbackMode.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\blueh\Desktop\CAN-Projects\can1-loopbackMode\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can1-loopbackMode.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: can1-loopbackMode.elf
+ 
+arm-none-eabi-objdump -h -S  can1-loopbackMode.elf  > "can1-loopbackMode.list"
+arm-none-eabi-objcopy  -O binary  can1-loopbackMode.elf  "can1-loopbackMode.bin"
+arm-none-eabi-size   can1-loopbackMode.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9284	     20	   1676	  10980	   2ae4	can1-loopbackMode.elf
+Finished building: default.size.stdout
+ 
+Finished building: can1-loopbackMode.bin
+ 
+Finished building: can1-loopbackMode.list
+ 
+
+01:22:55 Build Finished. 0 errors, 0 warnings. (took 3s.162ms)
+

@@ -1,0 +1,197 @@
+!SESSION 2020-07-09 17:14:55.902 -----------------------------------------------
+eclipse.buildId=Version 1.2.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.genuitec.eclipse.startup 4 0 2020-07-09 17:15:38.324
+!MESSAGE Process timed out while checking Windows Defender property: ExclusionPath
+
+!ENTRY org.eclipse.ui 2 0 2020-07-09 17:15:40.952
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-07-09 17:15:40.953
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-07-09 17:15:42.015
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-07-09 17:15:42.058
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-07-09 17:15:48.181
+!MESSAGE Log4j initialized with config file C:\Users\blueh\Desktop\CAN-Projects\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-09 17:15:50.131
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\blueh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-07-09 17:15:50.684
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-07-09 17:15:51.639
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-09 17:17:29.999
+!MESSAGE Indexed 'can1-loopbackMode' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-09 17:17:34.008
+!MESSAGE Indexed 'can1-loopbackMode' (21 sources, 21 headers) in 1.55 sec: 1,540 declarations; 8,969 references; 1 unresolved inclusions; 157 syntax errors; 4,836 unresolved names (32%)
+
+!ENTRY org.eclipse.ui 4 0 2020-07-09 17:25:09.334
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument cannot be null
+	at org.eclipse.swt.SWT.error(SWT.java:4692)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.SWT.error(SWT.java:4597)
+	at org.eclipse.swt.graphics.GC.drawImageInPixels(GC.java:871)
+	at org.eclipse.swt.graphics.GC.drawImage(GC.java:866)
+	at com.st.stm32cube.ide.mpu.ide.ui.status.MPUWorkbenchWindowControlContribution.lambda$0(MPUWorkbenchWindowControlContribution.java:144)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1654)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4818)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4820)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3580)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.quickaccess.providers.PreferenceElement.execute(PreferenceElement.java:52)
+	at org.eclipse.ui.internal.quickaccess.SearchField$7.handleElementSelected(SearchField.java:297)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.handleSelection(QuickAccessContents.java:650)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.access$0(QuickAccessContents.java:641)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$4.mouseUp(QuickAccessContents.java:842)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3986)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.ui 4 0 2020-07-09 17:25:22.059
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument cannot be null
+	at org.eclipse.swt.SWT.error(SWT.java:4692)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.SWT.error(SWT.java:4597)
+	at org.eclipse.swt.graphics.GC.drawImageInPixels(GC.java:871)
+	at org.eclipse.swt.graphics.GC.drawImage(GC.java:866)
+	at com.st.stm32cube.ide.mpu.ide.ui.status.MPUWorkbenchWindowControlContribution.lambda$0(MPUWorkbenchWindowControlContribution.java:144)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1654)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4818)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4820)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3580)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.quickaccess.providers.PreferenceElement.execute(PreferenceElement.java:52)
+	at org.eclipse.ui.internal.quickaccess.SearchField$7.handleElementSelected(SearchField.java:297)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.handleSelection(QuickAccessContents.java:650)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents.access$0(QuickAccessContents.java:641)
+	at org.eclipse.ui.internal.quickaccess.QuickAccessContents$4.mouseUp(QuickAccessContents.java:842)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3986)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+!SESSION 2020-07-09 17:25:36.515 -----------------------------------------------
+eclipse.buildId=Version 1.2.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/Users/blueh/Desktop/CAN-Projects/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-07-09 17:25:47.394
+!MESSAGE Log4j initialized with config file C:\Users\blueh\Desktop\CAN-Projects\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-07-09 17:25:53.944
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-09 17:25:54.186
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\blueh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-07-09 17:25:54.578
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.jface 2 0 2020-07-10 01:21:56.799
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1965)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:656)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1595)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
